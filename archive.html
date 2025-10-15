@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Archive | Defense4444 x Auto Design Tantalize</title>
+  <link rel="stylesheet" href="archivestyles.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="header-left">
+      <a href="mainpage.html">
+        <img src="Images/HEADER LOGO.png" alt="Logo" class="logo" />
+      </a>
+      <img src="Images/HEADER PARTNER.png" alt="Partner" class="partner-logo" />
+    </div>
+
+    <div class="header-right">
+      <button class="icon-btn">
+        <img src="Images/Search.png" alt="Search" />
+      </button>
+      <button class="icon-btn">
+        <img src="Images/Cart.png" alt="Cart" />
+      </button>
+      <a href="login.html">
+        <button class="login-btn">Log-in</button>
+      </a>
+      <a href="signup.html">
+        <button class="signup-btn">Sign-up</button>
+      </a>
+
+    </div>
+    <button class="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+  </header>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="nav-bar">
+    <a href="archive.html" class="nav-btn">Archive</a>
+    <a href="partshop.html" class="nav-btn">Parts Shop</a>
+    <a href="merch.html" class="nav-btn">Merch</a>
+    <a href="Contact.html" class="nav-btn">Contact Us</a>
+    <a href="about.html" class="nav-btn">About</a>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav">
+    <a href="archive.html">Archive</a>
+    <a href="partshop.html">Parts Shop</a>
+    <a href="merch.html">Merch</a>
+    <a href="Contact.html">Contact Us</a>
+    <a href="about.html">About</a>
+    <a href="login.html" class="login-link">Log-in</a>
+    <a href="signup.html" class="signup-link">Sign-up</a>
+  </div>
+
+  <!-- ARCHIVE SECTION -->
+  <main class="archive-page">
+    <h1 class="archive-title">Archive:</h1>
+
+    <div class="archive-entries">
+      <!-- CARD 1 -->
+      <div class="entry-card">
+        <img src="Images/Main Page Images/card1.jpg" alt="I.C.B.M" />
+        <h3>The story of I.C.B.M</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta, justo ut dapibus blandit, risus orci tincidunt sapien, sed dignissim eros est sit amet lacus. Integer id lorem vitae magna tristique commodo.</p>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="entry-card">
+        <img src="Images/Main Page Images/card2.jpg" alt="BREAK" />
+        <h3>The story of BREAK</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta, justo ut dapibus blandit, risus orci tincidunt sapien, sed dignissim eros est sit amet lacus. Integer id lorem vitae magna tristique commodo.</p>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="entry-card">
+        <img src="Images/Main Page Images/card3.jpg" alt="K-Style" />
+        <h3>The story of K-Style</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta, justo ut dapibus blandit, risus orci tincidunt sapien, sed dignissim eros est sit amet lacus. Integer id lorem vitae magna tristique commodo.</p>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="entry-card">
+        <img src="Images/Archive Images/post4.jpg" alt="Signal Demo Pt.2" />
+        <h3>Signal Auto Demo Cars Pt.2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta, justo ut dapibus blandit, risus orci tincidunt sapien, sed dignissim eros est sit amet lacus. Integer id lorem vitae magna tristique commodo.</p>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="entry-card">
+        <img src="Images/Archive Images/post5.jpg" alt="Signal Demo Pt.1" />
+        <h3>Signal Auto Demo Cars Pt.1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta, justo ut dapibus blandit, risus orci tincidunt sapien, sed dignissim eros est sit amet lacus. Integer id lorem vitae magna tristique commodo.</p>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="entry-card">
+        <img src="Images/Archive Images/post6.jpg" alt="K-Powers" />
+        <h3>K-Powers Appreciation</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta, justo ut dapibus blandit, risus orci tincidunt sapien, sed dignissim eros est sit amet lacus. Integer id lorem vitae magna tristique commodo.</p>
+      </div>
+    </div>
+
+    <!-- PAGINATION -->
+    <div class="pagination">
+      <a href="#" class="page-btn active">1</a>
+      <a href="#" class="page-btn">2</a>
+      <a href="#" class="page-btn">Next &gt;</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Defense4444 x Auto Design Tantalize!<br>
+    Template by: Gabriel Z. Escaño, Jean Kyle S. Tanhueco, Manjot Chamdal<br>
+    Preserving drift heritage, fueling the future of car culture.</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const mobileNav = document.querySelector(".mobile-nav");
+
+    hamburger.addEventListener("click", () => {
+      mobileNav.classList.toggle("show");
+      hamburger.classList.toggle("open");
+    });
+  </script>
+</body>
+</html>

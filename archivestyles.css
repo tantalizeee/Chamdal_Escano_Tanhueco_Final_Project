@@ -1,0 +1,451 @@
+/* ========== GENERAL STYLES ========== */
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: "Courier New", monospace;
+  padding-top: 130px; 
+  overflow-x: hidden;
+}
+
+/* ========== HEADER ========== */
+.main-header {
+  background-color: #1a1a1a;
+  color: white;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px 30px; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1100;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+  min-width: 0;
+  box-sizing: border-box;
+  overflow: visible;
+  height: 70px; 
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.partner-logo {
+  height: 45px;
+  width: auto;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+  flex-wrap: nowrap;
+  min-width: 0;
+  overflow: visible;
+  padding-right: 0; 
+  height: 70px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease;
+}
+
+.icon-btn img {
+  height: 45px;
+  width: auto;
+  display: block;
+}
+
+.icon-btn:hover {
+  transform: scale(1.1);
+}
+
+.login-btn,
+.signup-btn {
+  background: #b50000;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 18px;
+  border-radius: 20px;
+  margin-left: 2px; 
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  font-size: 1rem;
+  max-width: 110px; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block; 
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+  background: #ff2222;
+  transform: scale(1.08);
+  box-shadow: 0 0 10px #ff4444;
+}
+
+/* ========== NAVIGATION BAR ========== */
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2b2b;
+  gap: 20px;
+  padding: 0;
+  position: fixed;
+  top: 70px; 
+  left: 0;
+  width: 100%;
+  z-index: 1099;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  height: 60px;
+}
+
+.nav-btn {
+  background-color: #b50000;
+  color: white;
+  font-weight: bolder;
+  padding: 11px 5vw;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+  white-space: nowrap;
+  min-width: 160px;
+  max-width: 300px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.nav-btn:hover {
+  transform: scale(1.05);
+  background-color: #ff2222;
+  box-shadow: 0 0 10px #ff4444;
+}
+
+/* ========== HAMBURGER & MOBILE NAV ========== */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 32px; 
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1205;
+  position: static;
+  margin-left: 1px; 
+  margin-right: 0;
+  align-self: center;
+  flex-shrink: 0;
+  min-height: 10px;
+  min-width: 10px;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%; 
+  height: 3px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background-color: #1a1a1a;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  z-index: 1050; 
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+}
+
+.mobile-nav.show {
+  display: flex; 
+  max-height: 999px; 
+}
+
+.mobile-nav a {
+  color: white;
+  padding: 15px; 
+  text-decoration: none;
+  font-weight: bold;
+  display: block; 
+  transition: background 0.2s ease;
+  box-sizing: border-box; 
+}
+
+.mobile-nav a:hover {
+  background-color: #b50000;
+}
+
+
+.mobile-nav .login-link, 
+.mobile-nav .signup-link {
+    background-color: #b50000;
+    margin: 10px 20px;
+    border-radius: 20px;
+    padding: 12px;
+}
+
+.mobile-nav .login-link:hover, 
+.mobile-nav .signup-link:hover {
+    background-color: #ff2222;
+}
+
+/* ========== ARCHIVE MAIN SECTION ========== */
+.archive-page {
+  padding: 60px 5%;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Background watermark (parallax effect) */
+.archive-page::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 55%;
+  width: 150vw;
+  height: 150vh;
+  background: url("Images/BG2.png") center/contain no-repeat;
+  opacity: 0.07;
+  transform: translate(-50%, -50%) scale(1.2);
+  z-index: 0;
+  pointer-events: none;
+  animation: parallaxMove 20s linear infinite alternate;
+}
+
+@keyframes parallaxMove {
+  from {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  to {
+    transform: translate(-52%, -48%) scale(1.25);
+  }
+}
+
+.archive-title {
+  font-size: 2.6rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 40px;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.archive-entries {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.entry-card {
+  background: #2c2c2c;
+  border-radius: 12px;
+  width: 320px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.entry-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(128, 128, 128, 0.45);
+}
+
+.entry-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.entry-card h3 {
+  font-size: 1.2rem;
+}
+
+/* ========== PAGINATION ========== */
+.pagination {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.page-btn {
+  background: #b50000;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.page-btn:hover {
+  background: #ff2222;
+  box-shadow: 0 0 10px #ff4444;
+}
+
+.page-btn.active {
+  background: #ff2222;
+  box-shadow: 0 0 10px #ff4444;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background: #2c2c2c;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Desktop spacing */
+@media (min-width: 1025px) {
+  .header-right {
+    padding-right: 30px; 
+  }
+}
+
+/* Tablet screens (1024px and below) */
+@media (max-width: 1024px) {
+  .nav-bar {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+    margin-right: 13px;
+  }
+  .header-right {
+    display: flex;
+    margin-left: 230px;
+  }
+  .main-header {
+    padding-right: 10px;
+  }
+  body {
+    padding-top: 70px;
+  }
+  .mobile-nav {
+    top: 70px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-right {
+    gap: 0px; 
+    padding-right: 0px; 
+  }
+  .login-btn,
+  .signup-btn {
+    margin-left: 0;
+    padding: 7px 7px;
+    font-size: 0.92rem;
+    max-width: 90px;
+  }
+  .nav-btn {
+    padding: 8px 1vw;
+    min-width: 70px;
+    font-size: 0.92rem;
+  }
+  .header-right .icon-btn {
+    margin-right: 0;
+  }
+}
+
+/* Phone screens (768px and below) */
+@media (max-width: 768px) {
+  .partner-logo {
+    display: none;
+  }
+  
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0; 
+    height: 60px;
+  }
+  
+  .header-left {
+    padding-left: 5px; 
+    gap: 0;
+    margin-right: 0;
+  }
+  
+  .logo {
+    height: 45px;
+    margin-right: 0;
+  }
+  
+  .header-right {
+    gap: 7px; 
+    padding-right: 0; 
+    height: 60px;
+    margin-right: 60px;
+  }
+
+  .icon-btn img {
+    height: 38px;
+    padding: 0;
+  }
+  
+  .login-btn,
+  .signup-btn {
+    display: none; 
+    padding: 6px 6px; 
+    font-size: 0.88rem; 
+    margin-left: 0; 
+    max-width: 70px; 
+  }
+  .hamburger {
+    margin-right: 10px;
+    margin-left: 5px;
+  }
+  
+  .mobile-nav {
+    top: 60px;
+  }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Defense4444 x Auto Design Tantalize</title>
+  <link rel="stylesheet" href="mainstyles.css"/>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="main-header">
+    <div class="header-left">
+      <img src="Images/HEADER LOGO.png" alt="Logo" class="logo" />
+      <img src="Images/HEADER PARTNER.png" alt="Partner" class="partner-logo" />
+    </div>
+
+    <div class="header-right">
+      <button class="icon-btn">
+        <img src="Images/Search.png" alt="Search" />
+      </button>
+      <button class="icon-btn">
+        <img src="Images/Cart.png" alt="Cart" />
+      </button>
+      <a href="login.html">
+        <button class="login-btn">Log-in</button>
+      </a>
+      <a href="signup.html">
+        <button class="signup-btn">Sign-up</button>
+      </a>
+      <button class="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="nav-bar">
+    <a href="archive.html" class="nav-btn">Archive</a>
+    <a href="partshop.html" class="nav-btn">Parts Shop</a>
+    <a href="merch.html" class="nav-btn">Merch</a>
+    <a href="Contact.html" class="nav-btn">Contact Us</a>
+    <a href="about.html" class="nav-btn">About</a>
+  </nav>
+
+  <!-- MOBILE DROPDOWN MENU -->
+  <div class="mobile-nav">
+    <a href="archive.html">Archive</a>
+    <a href="partshop.html">Parts Shop</a>
+    <a href="merch.html">Merch</a>
+    <a href="Contact.html">Contact Us</a>
+    <a href="about.html">About</a>
+    <a href="login.html" class="login-link">Log-in</a>
+    <a href="signup.html" class="signup-link">Sign-up</a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-bg-logo"></div>
+    <h1>Welcome to the Defense4444 Archive!</h1>
+    <p class="subtitle">Preserving drift heritage, fueling the future of car culture.</p>
+    <p class="desc">
+      In partnership with Auto Design Tantalize, we preserve the legacy of drifting while fueling the future. Explore iconic builds, rare footage, and the machines that shaped the culture.
+    </p>
+  </section>
+
+  <!-- LATEST ENTRIES -->
+  <section class="latest">
+    <h2>Latest Entries</h2>
+    <div class="entries">
+      <div class="entry-card">
+        <img src="Images/Main Page Images/card1.jpg" alt="Entry 1" />
+        <h3>The Story of I.C.B.M</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta, justo ut dapibus blandit, risus orci tincidunt sapien, sed dignissim eros est sit amet lacus. Integer id lorem vitae magna tristique commodo.</p>
+      </div>
+      <div class="entry-card">
+        <img src="Images/Main Page Images/card2.jpg" alt="Entry 2" />
+        <h3>The Story of BREAK</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta, justo ut dapibus blandit, risus orci tincidunt sapien, sed dignissim eros est sit amet lacus. Integer id lorem vitae magna tristique commodo.</p>
+      </div>
+      <div class="entry-card">
+        <img src="Images/Main Page Images/card3.jpg" alt="Entry 3" />
+        <h3>The Story of K-Style</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta, justo ut dapibus blandit, risus orci tincidunt sapien, sed dignissim eros est sit amet lacus. Integer id lorem vitae magna tristique commodo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPOTLIGHT SECTIONS -->
+  <section class="spotlight archive">
+    <div class="spotlight-text">
+      <h2>Explore The Archive</h2>
+      <p>Dive deep into decades of drift history, legendary cars, and unseen documentation.</p>
+      <a href="archive.html">
+        <button class="spotlight-btn">View Archive</button>
+      </a>
+    </div>
+  </section>
+
+  <section class="spotlight shop">
+    <div class="spotlight-text">
+      <h2>Visit The Parts Shop</h2>
+      <p>Find rare, high-quality car parts and official merchandise from iconic garages.</p>
+      <a href="partshop.html">
+        <button class="spotlight-btn">Go to Shop</button>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Defense4444 x Auto Design Tantalize!<br>
+    Template by: Gabriel Z. Escaño, Jean Kyle S. Tanhueco, Manjot Chamdal<br>
+    Preserving drift heritage, fueling the future of car culture.</p>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const mobileNav = document.querySelector(".mobile-nav");
+    const header = document.querySelector(".main-header");
+
+    // Toggle mobile menu
+    hamburger.addEventListener("click", () => {
+      mobileNav.classList.toggle("show");
+      hamburger.classList.toggle("open");
+    });
+
+    // Keep header fixed while scrolling
+    window.addEventListener("scroll", () => {
+      header.classList.add("fixed");
+    });
+  </script>
+</body>
+</html>
+</body>
+</html>

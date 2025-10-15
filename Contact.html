@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | Defense4444 x Auto Design Tantalize</title>
+  <link rel="stylesheet" href="Contact.css" />
+</head>
+<body>
+
+  <div class="bg-logo"></div>
+  
+  <header class="main-header">
+      <div class="header-left">
+          <a href="mainpage.html">
+              <img src="Images/HEADER LOGO.png" alt="Defense Logo" class="logo" />
+          </a>
+          <img src="Images/HEADER PARTNER.png" alt="Auto Design Tantalize Partner" class="partner-logo">
+      </div>
+      <div class="header-right">
+
+          <button class="icon-btn search-btn">
+              <img src="Images/Search.png" alt="Search">
+          </button>
+          
+          <div class="cart-wrapper">
+              <button class="icon-btn cart-btn">
+                  <img src="Images/Cart.png" alt="Cart">
+              </button>
+          </div>
+
+          <a href="login.html" class="login-btn">Log-in</a>
+          <a href="signup.html" class="signup-btn">Sign-up</a>
+          
+          <button class="hamburger" id="hamburger-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+          </button>
+      </div>
+  </header>
+  
+  <nav class="nav-bar">
+      <a href="archive.html" class="nav-btn">Archive</a>
+      <a href="partshop.html" class="nav-btn">Parts Shop</a>
+      <a href="merch.html" class="nav-btn">Merch</a>
+      <a href="Contact.html" class="nav-btn active">Contact Us</a>
+      <a href="about.html" class="nav-btn">About</a>
+  </nav>
+
+  <nav class="mobile-nav" id="mobile-nav">
+      <a href="archive.html">Archive</a>
+      <a href="partshop.html">Parts Shop</a>
+      <a href="merch.html">Merch</a>
+      <a href="Contact.html">Contact Us</a>
+      <a href="about.html">About</a>
+      <a href="login.html" class="login-link">Log-in</a>
+      <a href="signup.html" class="signup-link">Sign-up</a>
+  </nav>
+  <main class="contact-page">
+    <section class="contact-container">
+      <h1 class="page-title">Contact Us:</h1>
+      
+      <div class="form-box">
+        <form class="contact-form">
+          <p class="form-description">Have a question? Drop us a message and we'll get back to you!</p>
+          
+          <label for="name">Your Name:</label>
+          <input id="name" name="name" type="text" placeholder="Enter your full name" required>
+
+          <label for="email">Email Address:</label>
+          <input id="email" name="email" type="email" placeholder="Enter your email address" required>
+
+          <label for="phone">Phone (Optional):</label>
+          <input id="phone" name="phone" type="tel" placeholder="Enter your phone number">
+
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" placeholder="Enter your message" rows="6" required></textarea>
+
+          <button type="submit" class="contact-submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      © 2025 Defense4444 x Auto Design Tantalize!<br>
+      Template by: Gabriel Z. Escaño, Jean Kyle S. Tanhueco, Manjot Chamdal<br>
+      Preserving drift heritage, fueling the future of car culture.
+    </p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger-menu');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    if (hamburger && mobileNav) {
+        hamburger.addEventListener('click', () => {
+            // Updated to use display: flex/none logic
+            if (mobileNav.classList.contains('show')) {
+                mobileNav.classList.remove('show');
+            } else {
+                mobileNav.classList.add('show');
+            }
+            hamburger.classList.toggle('open');
+        });
+    }
+  </script>
+
+</body>
+</html>

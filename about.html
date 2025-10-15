@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Defense4444 x Auto Design Tantalize</title>
+    <link rel="stylesheet" href="aboutstyles.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="header-left">
+            <a href="mainpage.html">
+                <img class="logo" src="Images/HEADER LOGO.png" alt="Defense Logo">
+            </a>
+            <img class="partner-logo" src="Images/HEADER PARTNER.png" alt="Partnered with Auto Design Tantalize">
+        </div>
+        <div class="header-right">
+            <button class="icon-btn search-btn">
+                <img src="Images/Search.png" alt="Search">
+            </button>
+            <button class="icon-btn cart-btn">
+                <img src="Images/Cart.png" alt="Cart">
+            </button>
+            
+            <a href="login.html">
+                <button class="login-btn">Log-in</button>
+            </a>
+            <a href="signup.html">
+                <button class="signup-btn">Sign-up</button>
+            </a>
+
+            <button class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="nav-bar">
+        <a href="archive.html" class="nav-btn">Archive</a>
+        <a href="partshop.html" class="nav-btn">Parts Shop</a>
+        <a href="merch.html" class="nav-btn">Merch</a>
+        <a href="contact.html" class="nav-btn">Contact Us</a>
+        <a href="about.html" class="nav-btn">About</a>
+    </nav>
+
+    <nav class="mobile-nav" id="mobile-nav">
+        <a href="archive.html">Archive</a>
+        <a href="partshop.html">Parts Shop</a>
+        <a href="merch.html">Merch</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About</a>
+        <a href="login.html" class="login-link">Log-in</a>
+        <a href="signup.html" class="signup-link">Sign-up</a>
+    </nav>
+
+    <main class="about-page">
+        <h1 class="page-title">About Us</h1>
+
+        <section class="about-section">
+            <h2>About Defense4444</h2>
+            <p>Born in Malaysia, Defense4444 began as a humble Instagram archive page dedicated to preserving the forgotten gems of drifting. What started as sharing grainy VHS clips, old photographs, and classic builds quickly grew into a hub for enthusiasts worldwide who wanted to relive the golden era of car culture.</p>
+            <p>Driven by a passion for history and the belief that drift heritage should never fade away, Defense4444 evolved from a simple page into a full archive — cataloging legendary machines, drivers, and moments that defined the scene. Today, it stands as both a tribute to the past and a bridge to the future of drifting.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>About Auto Design Tantalize!</h2>
+            <p>From the Philippines, Auto Design Tantalize was built on the pursuit of creativity, performance, and style. What began as a local project soon expanded into a tuning and design hub, curating parts and ideas that celebrate the individuality of every build.</p>
+            <p>ADT isn't just about parts — it's about imagination. Inspired by both street heritage and modern innovation, the brand continues to push the culture forward by providing enthusiasts with the tools to turn their dream builds into reality.</p>
+        </section>
+
+        <section class="about-section shared-journey">
+            <h2>A Shared Journey</h2>
+            <p>The story of Defense4444 and Auto Design Tantalize began not in a garage, but in a drift video game, where two enthusiasts from different countries connected through their shared love of cars. That friendship grew into collaboration — merging Malaysia's drift heritage archive with the Philippines' design vision.</p>
+            <p>Together, Defense4444 x ADT preserve the past, celebrate the present, and help shape the future of drift culture.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Defense4444 x Auto Design Tantalize!<br>
+        Template by: Gabriel Z. Escaño, Jean Kyle S. Tanhueco, Manjot Chamdal<br>
+        Preserving drift heritage, fueling the future of car culture.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger-menu');
+        const mobileNav = document.getElementById('mobile-nav');
+
+        hamburger.addEventListener('click', () => {
+            mobileNav.classList.toggle('show');
+            hamburger.classList.toggle('open');
+        });
+    </script>
+
+</body>
+</html>

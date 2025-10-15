@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merch | Defense4444 x Auto Design Tantalize</title>
+    <link rel="stylesheet" href="merch.css" />
+</head>
+
+<body>
+    <div class="bg-logo"></div>
+    
+    <header class="main-header">
+        <div class="header-left">
+            <a href="mainpage.html">
+                <img class="logo" src="Images/HEADER LOGO.png" alt="Defense Logo">
+            </a>
+            <img class="partner-logo" src="Images/HEADER PARTNER.png" alt="Partnered with Auto Design Tantalize">
+        </div>
+        <div class="header-right">
+            <button class="icon-btn search-btn">
+                <img src="Images/Search.png" alt="Search">
+            </button>
+            
+            <div class="cart-wrapper">
+                <button class="icon-btn cart-btn" id="view-cart-btn"> 
+                    <img src="Images/Cart.png" alt="Cart">
+                </button>
+                <span class="cart-badge" id="cart-badge">0</span> 
+            </div>
+
+            <a href="login.html">
+                <button class="login-btn">Log-in</button>
+            </a>
+            <a href="signup.html">
+                <button class="signup-btn">Sign-up</button>
+            </a>
+
+            <button class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="nav-bar">
+        <a href="archive.html" class="nav-btn">Archive</a>
+        <a href="partshop.html" class="nav-btn">Parts Shop</a>
+        <a href="merch.html" class="nav-btn">Merch</a>
+        <a href="contact.html" class="nav-btn">Contact Us</a>
+        <a href="about.html" class="nav-btn">About</a>
+    </nav>
+    
+    <nav class="mobile-nav" id="mobile-nav">
+        <a href="archive.html">Archive</a>
+        <a href="partshop.html">Parts Shop</a>
+        <a href="merch.html">Merch</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="about.html">About</a>
+        <a href="login.html" class="login-link">Log-in</a>
+        <a href="signup.html" class="signup-link">Sign-up</a>
+    </nav>
+
+    <main>
+        <div id="product-list-page" class="main-page-view">
+            <section class="product-header">
+                <h1 class="page-title">What we have:</h1>
+                <p>Defense x Auto Design Tantalize!</p>
+            </section>
+
+            <div class="cards-container">
+                <div class="card">
+                    <img src="Images/Merch Shop Images/sticker2.webp" alt="FourFour-Ball Decal" />
+                    <h2>FourFour-Ball Decal (5"x5")</h2>
+                    <p class="merch-price">$10.00</p>
+                    <a href="#" class="merch-buy-btn product-item"
+                       data-name="FourFour-Ball Decal (5&quot;x5&quot;)" 
+                       data-price="10.00"
+                       data-image="sticker2.webp">BUY NOW</a> 
+                </div>
+
+                <div class="card">
+                    <img src="Images/Merch Shop Images/sticker1.webp" alt="Defense4444 SPL Decal" />
+                    <h2>Defense4444 SPL Decal (2"x9.5")</h2>
+                    <p class="merch-price">$10.00</p>
+                    <a href="#" class="merch-buy-btn product-item"
+                       data-name="Defense4444 SPL Decal (2&quot;x9.5&quot;)" 
+                       data-price="10.00"
+                       data-image="sticker1.webp">BUY NOW</a>
+                </div>
+            </div>
+        </div>
+        <section id="cart-page" class="main-page-view hidden">
+            <section class="product-header">
+                <h1>Cart:</h1>
+            </section>
+
+            <div class="cart-box">
+                <div class="cart-table-header">
+                    <span class="col-item">Item</span>
+                    <span class="col-price">Price</span>
+                    <span class="col-qty">Qty:</span>
+                    <span class="col-total">Total</span>
+                </div>
+                
+                <div id="cart-items-container">
+                    </div>
+                
+                <div class="cart-total-area">
+                    <span class="total-label">Subtotal:</span>
+                    <span class="total-amount" id="subtotal-amount">$0.00</span>
+                    
+                    <span class="total-label">Shipping:</span>
+                    <span class="total-amount" id="shipping-amount">Calculated at Checkout</span>
+
+                    <span class="total-label grand-total-label">Grand Total:</span>
+                    <span class="total-amount grand-total-amount" id="grand-total-amount">$0.00</span>
+                </div>
+
+                <div class="cart-buttons">
+                    <button class="continue-shopping-btn" id="continue-shopping-btn">Continue Shopping</button>
+                    <button class="purchase-btn">Purchase</button>
+                </div>
+            </div>
+        </section>
+        </main>
+
+    <footer>
+        <p>
+            © 2025 Defense4444 x Auto Design Tantalize!<br>
+            Template by: Gabriel Z. Escaño, Jean Kyle S. Tanhueco, Manjot Chamdal<br>
+            Preserving drift heritage, fueling the future of car culture.
+        </p>
+    </footer>
+
+    <script src="merch.js"></script> 
+</body>
+
+</html>

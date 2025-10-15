@@ -1,0 +1,465 @@
+/* ========== GENERAL STYLES ========== */
+body {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: "Courier New", monospace;
+    padding-top: 130px;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a, button, input, textarea {
+    outline: none !important;
+    border: none !important;
+    font-family: inherit;
+}
+
+a.login-btn, a.signup-btn {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ========== HEADER ========== */
+.main-header {
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 30px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1100;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+    min-width: 0;
+    box-sizing: border-box;
+    overflow: visible;
+    height: 70px; 
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.partner-logo {
+    height: 45px;
+    width: auto;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    flex-wrap: nowrap;
+    min-width: 0;
+    overflow: visible;
+    padding-right: 0; 
+    height: 70px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.cart-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.2s ease;
+}
+
+.icon-btn img {
+    height: 45px;
+    width: auto;
+    display: block;
+}
+
+.icon-btn:hover {
+    transform: scale(1.1);
+}
+
+.login-btn,
+.signup-btn {
+    background: #b50000;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 18px;
+    border-radius: 20px;
+    margin-left: 2px; 
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    font-size: 1rem;
+    max-width: 110px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block; 
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+    background: #ff2222;
+    transform: scale(1.08);
+    box-shadow: 0 0 10px #ff4444;
+}
+
+/* ========== NAVIGATION BAR ========== */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2b2b;
+    gap: 20px;
+    padding: 0;
+    position: fixed;
+    top: 70px; 
+    left: 0;
+    width: 100%;
+    z-index: 1099;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+    height: 60px;
+}
+
+.nav-btn {
+    background-color: #b50000;
+    color: white;
+    font-weight: bolder;
+    padding: 11px 5vw;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+    white-space: nowrap;
+    min-width: 160px;
+    max-width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.nav-btn:hover {
+    transform: scale(1.05);
+    background-color: #ff2222;
+    box-shadow: 0 0 10px #ff4444;
+}
+
+/* ========== HAMBURGER & MOBILE NAV ========== */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 32px; 
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1205;
+    position: static;
+    margin-left: 1px; 
+    margin-right: 0; 
+    align-self: center;
+    flex-shrink: 0;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%; 
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    z-index: 1050; 
+    overflow: hidden;
+}
+
+.mobile-nav.show {
+    display: flex;
+}
+
+.mobile-nav a {
+    color: white;
+    padding: 15px 0; 
+    text-decoration: none;
+    font-weight: bold;
+    display: block; 
+    transition: background 0.2s ease;
+    box-sizing: border-box; 
+}
+
+.mobile-nav a:hover {
+    background-color: #b50000;
+}
+
+.mobile-nav .login-link, 
+.mobile-nav .signup-link {
+    background-color: #b50000;
+    margin: 10px auto;
+    border-radius: 20px;
+    padding: 12px;
+    width: 90%; 
+    max-width: none; 
+    box-sizing: border-box;
+}
+
+.mobile-nav .login-link:hover, 
+.mobile-nav .signup-link:hover {
+    background-color: #ff2222;
+}
+
+/* ========== MAIN CONTENT & STICKY FOOTER LOGIC ========== */
+main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 5%;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.page-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #ff4747;
+}
+
+/* Background watermark */
+.bg-logo {
+    position: fixed;
+    top: 50%;
+    left: 55%;
+    width: 150vw;
+    height: 150vh;
+    background: url("Images/BG2.png") center/contain no-repeat; 
+    opacity: 0.07;
+    transform: translate(-50%, -50%) scale(1.2);
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background: #2c2c2c; 
+    color: #ccc;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    flex-shrink: 0; 
+    width: 100%;
+    z-index: 2;
+}
+
+
+/* ========== CONTACT FORM STYLES (Adapted from login.css form) ========== */
+.contact-container {
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-box {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-description {
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.contact-form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ff4747;
+    font-size: 1.1rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background-color: #2b2b2b;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    border: 1px solid #444;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #b50000;
+    box-shadow: 0 0 5px rgba(181, 0, 0, 0.7);
+}
+
+.contact-form textarea {
+    min-height: 120px;
+}
+
+.contact-submit-btn {
+    background: #b50000;
+    color: white;
+    font-weight: bolder;
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    width: 100%;
+}
+
+.contact-submit-btn:hover {
+    background: #ff2222;
+    transform: scale(1.02);
+    box-shadow: 0 0 10px #ff4444;
+}
+
+
+
+/* --- MEDIA QUERIES --- */
+
+/* Tablet screens (1024px and below) */
+@media (max-width: 1024px) {
+    .nav-bar {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .header-right {
+        gap: 8px;
+        margin-right: 0; 
+        padding-right: 70px;
+    }
+    .main-header {
+        padding-right: 10px;
+        height: 70px;
+    }
+    body {
+        padding-top: 70px;
+    }
+    .mobile-nav {
+        top: 70px;
+    }
+
+    .login-btn,
+    .signup-btn {
+        margin-left: 0;
+        padding: 7px 10px;
+        font-size: 0.92rem;
+        max-width: 90px;
+    }
+    .icon-btn img {
+        height: 40px;
+    }
+}
+
+
+/* Phone screens (768px and below) */
+@media (max-width: 768px) {
+    .partner-logo {
+        display: none;
+    }
+    
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0; 
+        height: 60px;
+    }
+    
+    .header-left {
+        padding-left: 5px; 
+        gap: 0;
+    }
+    
+    .logo {
+        height: 45px;
+    }
+    
+    .header-right {
+        gap: 2px; 
+        padding-right: 20px; 
+        height: 60px;
+    }
+
+    .icon-btn img {
+        height: 38px;
+    }
+    
+    .header-right .login-btn,
+    .header-right .signup-btn {
+        display: none;
+    }
+    
+    .hamburger {
+        margin-right: 5px;
+    }
+    
+    .mobile-nav {
+        top: 60px;
+    }
+
+    body {
+        padding-top: 60px;
+    }
+
+    .form-box {
+        padding: 20px;
+    }
+}

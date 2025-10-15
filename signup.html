@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up | Defense4444 x Auto Design Tantalize</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <!-- HEADER (Copied from login.html) -->
+    <header class="main-header">
+        <div class="header-left">
+            <a href="mainpage.html">
+                <img src="Images/HEADER LOGO.png" alt="Logo" class="logo" />
+            </a>
+            <img src="Images/HEADER PARTNER.png" alt="Auto Design Tantalize Partner" class="partner-logo">
+        </div>
+        <div class="header-right">
+
+            <button class="icon-btn">
+                <img src="Images/Search.png" alt="Search">
+            </button>
+
+            <button class="icon-btn cart-wrapper">
+                <img src="Images/Cart.png" alt="Cart">
+                <span class="cart-count"></span>
+            </button>
+            <a href="login.html" class="login-btn">Log-in</a>
+            <a href="signup.html" class="signup-btn">Sign-up</a>
+            <button class="hamburger" id="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- NAVIGATION BAR (Copied from login.html) -->
+    <nav class="nav-bar">
+        <a href="archive.html" class="nav-btn">Archive</a>
+        <a href="partshop.html" class="nav-btn">Parts Shop</a>
+        <a href="merch.html" class="nav-btn">Merch</a>
+        <a href="Contact.html" class="nav-btn">Contact Us</a>
+        <a href="about.html" class="nav-btn">About</a>
+    </nav>
+
+    <!-- MOBILE NAVIGATION MENU (Copied from login.html) -->
+    <div class="mobile-nav" id="mobile-nav-menu">
+        <a href="archive.html">Archive</a>
+        <a href="partshop.html">Parts Shop</a>
+        <a href="merch.html">Merch</a>
+        <a href="Contact.html">Contact Us</a>
+        <a href="about.html">About</a>
+        <a href="login.html" class="login-link">Log-in</a>
+        <a href="signup.html" class="signup-link">Sign-up</a>
+    </div>
+
+    <!-- MAIN CONTENT - SIGNUP FORM -->
+    <main class="login-page">
+        <div class="login-container">
+            <h1 class="login-title">Sign-up:</h1>
+            
+            <div class="login-form-box">
+                <form>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    
+                    <button type="submit" class="login-submit-btn">Create Account</button>
+                </form>
+                <p class="switch-form-text">Already have an account? <a href="login.html">Log in here!</a></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER (Copied from login.html) -->
+    <footer>
+        <p>© 2025 Defense4444 x Auto Design Tantalize!<br>
+            Template by: Gabriel Z. Escaño, Jean Kyle S. Tanhueco, Manjot Chamdal<br>
+            Preserving drift heritage, fueling the future of car culture.</p>
+    </footer>
+
+    <script src="mobile_menu.js"></script>
+    <style>
+        .login-form-box p.switch-form-text {
+            text-align: center;
+            margin-top: 30px;
+            color: #ccc;
+        }
+        .login-form-box p.switch-form-text a {
+            color: #ff4444;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .login-form-box p.switch-form-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <!-- JAVASCRIPT -->
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const mobileNav = document.querySelector(".mobile-nav");
+    const header = document.querySelector(".main-header");
+
+    // Toggle mobile menu
+    hamburger.addEventListener("click", () => {
+      mobileNav.classList.toggle("show");
+      hamburger.classList.toggle("open");
+    });
+
+    // Keep header fixed while scrolling
+    window.addEventListener("scroll", () => {
+      header.classList.add("fixed");
+    });
+  </script>
+</body>
+</html>
